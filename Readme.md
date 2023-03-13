@@ -797,4 +797,25 @@ List<Integer> l2 = l.stream().sorted((i1,i2)->-i1.compareTo(i2)).collect(Collect
 ```
 
 
+#### Processing by using forEach() method
+
+- This method won't return anything 
+- This method can take lambda expression as argument adn apply that lambda expresssion for each element present in Stream 
+
+```java 
+ArrayList<String> l = new ArrayList<String>();
+l.add('A');
+l.add('BB');
+l.add('CCC');
+
+l.stream().forEach(s->System.out.println(s));
+
+l.stream().forEach(System.out::println);
+// 
+
+
+```
+
+
+
 
